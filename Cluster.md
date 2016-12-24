@@ -43,9 +43,10 @@
 
 ### device-mapper for multipath issue:###
     # NOTE: The time on every machine should not be a different
-
+```
   
   node1:
+  ```
        yum install device-mapper* -y
        mpathconf --enable
        /etc/init.d/multipathd restart
@@ -96,9 +97,9 @@
            # Clear memory cache after setup
          echo 3 > /proc/sys/vm/drop_caches
            # Follow the steps to create a cluster and services...
-
-
+```
   node2:
+  ```
        yum install device-mapper* -y
        mpathconf --enable
        /etc/init.d/multipathd restart
@@ -130,9 +131,9 @@
            # Clear memory cache after setup
         echo 3 > /proc/sys/vm/drop_caches
            # Follow the steps to create a cluster and services...
+```
 
-
-Have Fun with nu11secur1ty =)
+# Have Fun with nu11secur1ty =)
 
 
 
