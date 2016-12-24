@@ -135,6 +135,7 @@
            # Follow the steps to create a cluster and services...
 ```
 
+![image](https://github.com/nu11secur1ty/building-cluster-and-engineering_iscsi/blob/master/iScsi_deployment.jpg)
 # Have Fun with nu11secur1ty =)
 
 
