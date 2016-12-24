@@ -2,32 +2,34 @@
 
 
 
-
+```
 # Storage:
   storage 192.168.0.104
 
 # Install in all nodes:
-  - node1 192.168.0.101
+    node1 192.168.0.101
     yum install iscsi* -y
   
-  - node2 192.168.0.102
+    node2 192.168.0.102
     yum install iscsi* -y
 
-  - node3
+    node3
     ..........
---------------------------------------------------
+```
 
 # Connect node1 to storage:
+```
   iscsiadm -m discovery -t st -p 192.168.0.104
   chkconfig iscsi on
   iscsiadm -m node -T (storage target..exam: ian.2015-05.com.example:apache.target1) -p 192.168.0.104 -l
-
+```
 # Connect node2 to storage:
+```  
   iscsiadm -m discovery -t st -p 192.168.0.104
   chkconfig iscsi on
   iscsiadm -m node -T (storage target..exam: ian.2015-05.com.example:apache.target1) -p 192.168.0.104 -l
   
-  - check:
+    check:
     node1:
     lsblk 
          output example:
@@ -37,7 +39,7 @@
     lsblk 
          output example:
          sdb               8:16   0    50G  0   disk
-----------------------------------------------------
+```
 
 ### device-mapper for multipath issue:###
     # NOTE: The time on every machine should not be a different
