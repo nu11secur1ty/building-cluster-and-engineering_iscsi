@@ -54,7 +54,7 @@
        chkconfig multipathd on
        lsblk
   
-           # create partition for iscsi disk, then partprobes:
+           # create partition for iscsi disk, then partprobe:
          fdisk -cu /dev/mapper/mpathd
          p
          n
