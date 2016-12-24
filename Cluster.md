@@ -42,10 +42,9 @@
 ```
 
 ### device-mapper for multipath issue:###
-    # NOTE: The time on every machine should not be a different
-```
-  
-  node1:
+   # NOTE: The time on every machine should not be a different
+
+  # node1:
   ```
        yum install device-mapper* -y
        mpathconf --enable
@@ -98,7 +97,7 @@
          echo 3 > /proc/sys/vm/drop_caches
            # Follow the steps to create a cluster and services...
 ```
-  node2:
+  # node2:
   ```
        yum install device-mapper* -y
        mpathconf --enable
